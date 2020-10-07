@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TemperatureCalculator</string>
+    <string-array name="temperature_options">
+        <item>"F -> C</item>
+        <item>"C -> F</item>
+
+    </string-array>
 </resources>

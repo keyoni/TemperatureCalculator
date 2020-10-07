@@ -19,6 +19,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Spinner
+        android:id="@+id/spOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/temperature_options"
+        app:layout_constraintBottom_toTopOf="@+id/btnConvert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
     <TextView
         android:id="@+id/tvResult"
         android:layout_width="wrap_content"
@@ -27,24 +40,24 @@
         android:layout_marginTop="144dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:textSize="16sp"
         android:text="-"
-        app:layout_constraintBottom_toBottomOf="@+id/etNumber"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etTemperature"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/etNumber"
+        app:layout_constraintStart_toEndOf="@+id/etTemperature"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
     <EditText
-        android:id="@+id/etNumber"
+        android:id="@+id/etTemperature"
         android:layout_width="109dp"
         android:layout_height="43dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
-        android:textSize="16sp"
-        android:inputType="number"
         android:hint="Temp"
+        android:inputType="numberSigned"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
@@ -59,5 +72,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/etTemperature" />
 </androidx.constraintlayout.widget.ConstraintLayout>
